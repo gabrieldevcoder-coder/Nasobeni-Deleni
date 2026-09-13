@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     const input = document.querySelector("#odpoved");
     const priklad = document.querySelector(".priklad");
 
-    function Znamka(){
+    function znamka(){
         let uspesnost = spravne/(pocetKol-1)*100;
         let znamka;
         if (uspesnost > 89) {
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () =>{
         }else{
         form.classList.add("konec");
         priklad.classList.add("znamka");
-        Znamka();
+        znamka();
         }
     }, 60000);
     spatne.textContent = `chyby: ${chyba}`;
@@ -107,7 +107,7 @@ form.addEventListener("submit", (event) => {
     }else{
         form.classList.add("konec");
         priklad.classList.add("znamka");
-        Znamka();
+        znamka();
     }
 
 });
