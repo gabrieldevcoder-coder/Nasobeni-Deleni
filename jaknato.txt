@@ -1,0 +1,36 @@
+vytvorit casovac(set)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setTimeout() → spustí „čas vypršel“ po 60 s
+clearTimeout() → zruší těch 60 s, pokud hráč odpoví dřív
+addEventListener("submit", ...) → zjistí, že hráč odpověděl
+event.preventDefault() → zabrání obnovení stránky
+Date.now() → pokud chceš měřit skutečný uplynulý čas

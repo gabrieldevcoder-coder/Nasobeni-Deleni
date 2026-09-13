@@ -1,0 +1,19 @@
+.pole{
+    background-color: white;
+}
+.pole.chyba{
+    background-color: red;
+}
+.pole.spravne{
+    background-color: green;
+}
+.priklad{
+    text-align: center;
+}
+.Inbox{
+    text-align: center;
+}
+p{
+    text-align: end;
+    
+}
