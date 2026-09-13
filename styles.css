@@ -11,9 +11,21 @@
     text-align: center;
 }
 .Inbox{
+    
     text-align: center;
 }
 p{
     text-align: end;
     
+}
+.Inbox.konec{
+    display:none;
+}
+.priklad.znamka{
+    font-size: 5rem;
+}
+@media (max-width: 768px) {
+    .priklad.znamka{
+    font-size: 3rem;
+    }
 }
