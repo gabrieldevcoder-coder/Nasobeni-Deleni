@@ -32,21 +32,29 @@ document.addEventListener("DOMContentLoaded", () =>{
         }
         priklad.textContent = `znamka: ${znamka}`;
     }
-
     function dalsiPriklad() {
     // 1. vygenerovat příklad
-    let cislo1 = Math.floor(Math.random() * 10) + 1;
-    let cislo2 = Math.floor(Math.random() * 10) + 1;
+    let cislo1;
+    let cislo2; 
     let rozhodnuti = Math.floor(Math.random() * 2)
 
 
     // 2. uložit správný výsledek
     if(rozhodnuti === 0){
-        spravnyVysledek = Math.floor(cislo1 * cislo2);
+        cislo1 = Math.floor(Math.random() * 10) + 1;
+        cislo2= Math.floor(Math.random() * 10) + 1;
+        spravnyVysledek = cislo1 * cislo2;
         priklad.textContent = `${cislo1} . ${cislo2}`;
     }
     else if(rozhodnuti === 1){
-        spravnyVysledek = Math.floor(cislo1 / cislo2);
+        cislo1 = Math.floor(Math.random() * 100) + 1;
+        cislo2= Math.floor(Math.random() * 10) + 1;
+
+        while(cislo1 % cislo2 !== 0 || cislo1 / cislo2 > 10) {
+        cislo1 = Math.floor(Math.random() * 100) + 1;
+        cislo2 = Math.floor(Math.random() * 10) + 1;
+    }
+        spravnyVysledek = cislo1 / cislo2;
         priklad.textContent = `${cislo1} : ${cislo2}`;
     }
         // 4. spustit 60s timer
